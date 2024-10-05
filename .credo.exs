@@ -84,7 +84,8 @@
           {Credo.Check.Design.TagTODO, [exit_status: 2]},
 
 
-
+        ],
+        disabled: [
           #
           ## Refactoring Opportunities
           #
@@ -104,10 +105,6 @@
           {Credo.Check.Refactor.RejectReject, []},
           {Credo.Check.Refactor.UnlessWithElse, []},
           {Credo.Check.Refactor.WithClauses, []},
-
-
-        ],
-        disabled: [
           #
           ## Consistency Checks
           #
