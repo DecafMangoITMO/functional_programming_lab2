@@ -28,6 +28,7 @@
 ## Ключевые элементы реализации
 
 Добавление, получение и удаление элементов:
+
 ```elixir
 def insert(%OAHashDict{table: table, size: size, capacity: capacity} = dict, key, value) do
     if is_nil(key) do
@@ -79,6 +80,7 @@ def insert(%OAHashDict{table: table, size: size, capacity: capacity} = dict, key
 ```
 
 Фильтрация:
+
 ```elixir
 def filter(%OAHashDict{table: table} = dict, predicate) do
     {table, counter} = do_filter(table, [], predicate, 0)
@@ -98,6 +100,7 @@ def filter(%OAHashDict{table: table} = dict, predicate) do
 ```
 
 Отображение (map):
+
 ```elixir
 def map(%OAHashDict{table: table} = dict, mapper) do
     table = do_map(table, [], mapper)
@@ -118,6 +121,7 @@ def map(%OAHashDict{table: table} = dict, mapper) do
 ```
 
 Свертки (левая и правая):
+
 ```elixir
 def foldl(%OAHashDict{table: table}, initAcc, reducer) do
     do_foldl(table, initAcc, reducer)
@@ -145,11 +149,13 @@ def foldl(%OAHashDict{table: table}, initAcc, reducer) do
 ## Соответствие свойству моноида
 
 Определили пустой элемент (размер и вместимость равны нулю):
+
 ```elixir
 def empty(), do: new(0)
 ```
 
 Определили бинарную операцию combine:
+
 ```elixir
   def combine(
         %OAHashDict{table: table1, size: size1, capacity: capacity1},
