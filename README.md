@@ -1,21 +1,28 @@
-# FunctionalProgrammingLab2
+# Лабораторная работа №2 (Щзу)
 
-**TODO: Add description**
+---
 
-## Installation
+* Студент: `Разинкин Александр Владимирович`
+* Группа: `P3307`
+* ИСУ: `368712`
+* Функциональный язык: `Elixir`
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `functional_programming_lab2` to your list of dependencies in `mix.exs`:
+--- 
 
-```elixir
-def deps do
-  [
-    {:functional_programming_lab2, "~> 0.1.0"}
-  ]
-end
-```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/functional_programming_lab2>.
+--- 
 
+## Выводы
+
+В ходе решения задач я применил классические приемы, присущие функциональным языкам:
+
+- Рекурсия - для реализации циклов
+- Pattern Matching (сопоставление с образцом) - для реализации ветвления 
+(ну и, само собой, для привязывания значения переменных)
+
+В обеих проблемах меня выручило классное свойство целых чисел в Elixir - их нефиксированный размер, т.е. 
+возможность занимать бесконечно большое число байтов (например, выражение (2 * 20)! 
+не поместилось в int64 языка Go - пришлось использовать стандартную библиотеку math/big).
+
+Практика показала, что функциональные языки в зависимости от предлагаемой задачи 
+являются более удобным вариантом по сравнению с традиционными императивными языками программирования.

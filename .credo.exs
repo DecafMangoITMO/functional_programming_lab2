@@ -66,15 +66,7 @@
       #
       checks: %{
         enabled: [
-          #
-          ## Consistency Checks
-          #
-          {Credo.Check.Consistency.ExceptionNames, []},
-          {Credo.Check.Consistency.LineEndings, []},
-          {Credo.Check.Consistency.ParameterPatternMatching, []},
-          {Credo.Check.Consistency.SpaceAroundOperators, []},
-          {Credo.Check.Consistency.SpaceInParentheses, []},
-          {Credo.Check.Consistency.TabsOrSpaces, []},
+
 
           #
           ## Design Checks
@@ -116,6 +108,16 @@
 
         ],
         disabled: [
+          #
+          ## Consistency Checks
+          #
+          {Credo.Check.Consistency.ExceptionNames, []},
+          {Credo.Check.Consistency.LineEndings, []},
+          {Credo.Check.Consistency.ParameterPatternMatching, []},
+          {Credo.Check.Consistency.SpaceAroundOperators, []},
+          {Credo.Check.Consistency.SpaceInParentheses, []},
+          {Credo.Check.Consistency.TabsOrSpaces, []},
+
           #
           ## Warnings
           #
