@@ -91,6 +91,56 @@
           #
           {Credo.Check.Design.TagTODO, [exit_status: 2]},
 
+
+
+          #
+          ## Refactoring Opportunities
+          #
+          {Credo.Check.Refactor.Apply, []},
+          {Credo.Check.Refactor.CondStatements, []},
+          {Credo.Check.Refactor.CyclomaticComplexity, []},
+          {Credo.Check.Refactor.FilterCount, []},
+          {Credo.Check.Refactor.FilterFilter, []},
+          {Credo.Check.Refactor.FunctionArity, []},
+          {Credo.Check.Refactor.LongQuoteBlocks, []},
+          {Credo.Check.Refactor.MapJoin, []},
+          {Credo.Check.Refactor.MatchInCondition, []},
+          {Credo.Check.Refactor.NegatedConditionsInUnless, []},
+          {Credo.Check.Refactor.NegatedConditionsWithElse, []},
+          {Credo.Check.Refactor.Nesting, []},
+          {Credo.Check.Refactor.RedundantWithClauseResult, []},
+          {Credo.Check.Refactor.RejectReject, []},
+          {Credo.Check.Refactor.UnlessWithElse, []},
+          {Credo.Check.Refactor.WithClauses, []},
+
+
+        ],
+        disabled: [
+          #
+          ## Warnings
+          #
+          {Credo.Check.Warning.ApplicationConfigInModuleAttribute, []},
+          {Credo.Check.Warning.BoolOperationOnSameValues, []},
+          {Credo.Check.Warning.Dbg, []},
+          {Credo.Check.Warning.ExpensiveEmptyEnumCheck, []},
+          {Credo.Check.Warning.IExPry, []},
+          {Credo.Check.Warning.IoInspect, []},
+          {Credo.Check.Warning.MissedMetadataKeyInLoggerConfig, []},
+          {Credo.Check.Warning.OperationOnSameValues, []},
+          {Credo.Check.Warning.OperationWithConstantResult, []},
+          {Credo.Check.Warning.RaiseInsideRescue, []},
+          {Credo.Check.Warning.SpecWithStruct, []},
+          {Credo.Check.Warning.UnsafeExec, []},
+          {Credo.Check.Warning.UnusedEnumOperation, []},
+          {Credo.Check.Warning.UnusedFileOperation, []},
+          {Credo.Check.Warning.UnusedKeywordOperation, []},
+          {Credo.Check.Warning.UnusedListOperation, []},
+          {Credo.Check.Warning.UnusedPathOperation, []},
+          {Credo.Check.Warning.UnusedRegexOperation, []},
+          {Credo.Check.Warning.UnusedStringOperation, []},
+          {Credo.Check.Warning.UnusedTupleOperation, []},
+          {Credo.Check.Warning.WrongTestFileExtension, []},
+
           #
           ## Readability Checks
           #
@@ -115,8 +165,7 @@
           {Credo.Check.Readability.UnnecessaryAliasExpansion, []},
           {Credo.Check.Readability.VariableNames, []},
           {Credo.Check.Readability.WithSingleClause, []},
-        ],
-        disabled: [
+
           #
           # Checks scheduled for next check update (opt-in for now)
           {Credo.Check.Refactor.UtcNowTruncate, []},
